@@ -1,5 +1,6 @@
 #include <raylib.h>
 #include <stdio.h>
+#include <sys/types.h>
 
 #define HEAD 0b10
 #define TAIL 0b01
@@ -11,7 +12,7 @@
 #define SCREEN_WIDTH 800
 #define SCREEN_HEIGHT 800
 #define TITLE "Wireworld"
-#define TARGET_FPS 60
+#define TARGET_FPS 12
 
 typedef struct gameState {
     u_int8_t isEditing: 1;
